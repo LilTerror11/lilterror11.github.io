@@ -27,7 +27,7 @@ ul.nav li a:hover {
     background-color: #111;
 }
 
-ul.nav li.active a:hover {
+li.active a:hover {
     background-color: #006f46af;
 }
 
