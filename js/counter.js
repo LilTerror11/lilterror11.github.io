@@ -3,8 +3,6 @@ if (typeof(Storage) !== "undefined") {
 
 }
 
-update_clicks();
-
 function clickCounter() {
     if (typeof(Storage) !== "undefined") {
         if (localStorage.clickcount) {
@@ -21,3 +19,5 @@ function clickCounter() {
 function update_clicks() {
     document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
 }
+
+update_clicks();
