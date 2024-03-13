@@ -3,6 +3,8 @@ if (typeof(Storage) !== "undefined") {
 
 }
 
+update_clicks();
+
 function clickCounter() {
     if (typeof(Storage) !== "undefined") {
         if (localStorage.clickcount) {
