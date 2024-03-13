@@ -20,8 +20,6 @@ function update_clicks() {
     if (typeof(Storage) !== "undefined") {
         if (localStorage.clickcount) {
             localStorage.clickcount = Number(localStorage.clickcount)+0;
-        } else {
-            localStorage.clickcount = 0;
         }
         document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
     } else {
