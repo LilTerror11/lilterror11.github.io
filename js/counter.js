@@ -29,4 +29,4 @@ function update_clicks() {
     }
 }
 
-update_clicks();
+//update_clicks();
