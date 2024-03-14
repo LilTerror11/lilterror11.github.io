@@ -29,6 +29,20 @@ function update_clicks() {
     }
 }
 
+function addClicks(num) {
+    if (typeof(Storage) !== "undefined") {
+        if (localStorage.clickcount) {
+            localStorage.clickcount = Number(localStorage.clickcount)+Number(num);
+        } else {
+            localStorage.clickcount = 1;
+        }
+        document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
+        //alert(String(localStorage.clickPower))
+    } else {
+        document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+    }
+}
+
 function reset() {
     localStorage.clear();
 }
@@ -36,7 +50,8 @@ function reset() {
 setInterval(function() {
     if (localStorage.autoClick == 'true') {
         //localStorage.clickcount = Number(localStorage.clickcount)+1;
-        clickCounter();
+        addClicks(1);
+        //clickCounter();
         //update_clicks();
     }
 }, 1000);
