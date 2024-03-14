@@ -28,4 +28,8 @@ function update_clicks() {
     }
 }
 
+function reset() {
+    localStorage.clear();
+}
+
 //update_clicks();
