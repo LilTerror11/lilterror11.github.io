@@ -1,4 +1,4 @@
-if (typeof(Storage) == "undefined") {
+if (typeof(Storage) == undefined) {
     localStorage.clickcount = 0 
     localStorage.clickPower = 1
 }
