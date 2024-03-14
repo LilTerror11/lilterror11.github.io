@@ -1,13 +1,12 @@
 if (typeof(Storage) == "undefined") {
     localStorage.clickcount = 0 
-    localStorage.clickPower = 0
+    localStorage.clickPower = 1
 }
 
 function clickCounter() {
-    clickPower = Number(localStorage.clickPower);
     if (typeof(Storage) !== "undefined") {
         if (localStorage.clickcount) {
-            localStorage.clickcount = Number(localStorage.clickcount)+1*clickPower;
+            localStorage.clickcount = Number(localStorage.clickcount)+1*Number(localStorage.clickPower);
         } else {
             localStorage.clickcount = 1;
         }
