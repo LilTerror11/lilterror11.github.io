@@ -45,7 +45,7 @@ function auto_clicks() {
 }
 
 function addClick() {
-    clicks +=
+    clicks += 1
 }
 
 setInterval(function() {
