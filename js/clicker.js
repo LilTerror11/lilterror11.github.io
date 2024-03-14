@@ -33,12 +33,18 @@ function updateStorage() {
     localStorage.clicker_autoClickers = autoClickers
 }
 
+function update_var() {
+    clicks = localStorage.clicker_clicks;
+    autoClickers = localStorage.clicker_autoClickers;
+}
+
 setInterval(function() {
     if (localStorage.autoClick >= 0) {
-        checkValue();
-        clicks++;
-        update_value();
-        updateStorage();
+        checkValue(); //check if the variables are active
+        update_var(); //update the variables
+        clicks++; //add one click
+        update_value(); //update the value on the webpage
+        updateStorage(); //update the value in the storage
     }
 }, 1000);
 
