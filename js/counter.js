@@ -23,9 +23,6 @@ function clickCounter() {
 
 function update_clicks() {
     if (typeof(Storage) !== "undefined") {
-        if (localStorage.clickcount) {
-            localStorage.clickcount = Number(localStorage.clickcount)+0;
-        }
         document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
     } else {
         document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
@@ -35,5 +32,13 @@ function update_clicks() {
 function reset() {
     localStorage.clear();
 }
+
+setInterval(function() {
+    if (localStorage.autoClick == true) {
+        //localStorage.clickcount = Number(localStorage.clickcount)+1;
+        clickCounter();
+        //update_clicks();
+    }
+}, 1000);
 
 //update_clicks();
