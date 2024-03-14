@@ -9,7 +9,6 @@ function clickCounter() {
             localStorage.clickcount = 1;
         }
         document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
-        //alert(String(localStorage.clickPower))
     } else {
         document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
     }
@@ -26,23 +25,36 @@ function update_value() {
 function checkValue() {
     if (localStorage.clicker_clicks == undefined) {localStorage.clicker_clicks = 0; clicks = localStorage.clicker_clicks;}
     if (localStorage.clicker_autoClickers == undefined) {localStorage.clicker_autoClickers = 0; autoClickers = localStorage.clicker_autoClickers;}
+    if (localStorage.clicker_clickPower == undefined) {localStorage.clicker_clickPower = 1; clickPower_ = localStorage.clicker_clickPower}
 }
 
 function updateStorage() {
     localStorage.clicker_clicks = clicks;
     localStorage.clicker_autoClickers = autoClickers
+    localStorage.clicker_clickPower = clickPower_
 }
 
 function update_var() {
     clicks = localStorage.clicker_clicks;
     autoClickers = localStorage.clicker_autoClickers;
+    clickPower_ = localStorage.clicker_clickPower;
+}
+
+function auto_clicks() {
+    clicks += autoClickers
+}
+
+function addClick() {
+    clicks +=
 }
 
 setInterval(function() {
     if (localStorage.autoClick >= 0) {
         checkValue(); //check if the variables are active
         update_var(); //update the variables
-        clicks++; //add one click
+        
+        auto_clicks();
+
         update_value(); //update the value on the webpage
         updateStorage(); //update the value in the storage
     }
