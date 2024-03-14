@@ -34,7 +34,7 @@ function reset() {
 }
 
 setInterval(function() {
-    if (localStorage.autoClick == true) {
+    if (localStorage.autoClick == 'true') {
         //localStorage.clickcount = Number(localStorage.clickcount)+1;
         clickCounter();
         //update_clicks();
