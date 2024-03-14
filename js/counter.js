@@ -48,9 +48,12 @@ function reset() {
 }
 
 setInterval(function() {
-    if (localStorage.autoClick == 'true') {
+    if (localStorage.autoClick == undefined) {
+        localStorage.autoClick = 0;
+    }
+    if (localStorage.autoClick >= 0) {
         //localStorage.clickcount = Number(localStorage.clickcount)+1;
-        addClicks(1);
+        addClicks(localStorage.autoClick);
         //clickCounter();
         //update_clicks();
     }
