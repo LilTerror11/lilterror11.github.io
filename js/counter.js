@@ -10,12 +10,12 @@ function clickCounter() {
     }
     if (typeof(Storage) !== "undefined") {
         if (localStorage.clickcount) {
-            localStorage.clickcount = Number(localStorage.clickcount)+1;
+            localStorage.clickcount = Number(localStorage.clickcount)+Number(localStorage.clickPower);
         } else {
             localStorage.clickcount = 1;
         }
         document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
-        alert(String(localStorage.clickPower))
+        //alert(String(localStorage.clickPower))
     } else {
         document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
     }
