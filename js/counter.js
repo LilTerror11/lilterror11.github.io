@@ -5,7 +5,7 @@ if (typeof(Storage) == "undefined") {
 
 
 function clickCounter() {
-    if (localStorage.clickPower == "undefined") {
+    if (localStorage.clickPower == undefined) {
         localStorage.clickPower = 1
     }
     if (typeof(Storage) !== "undefined") {
