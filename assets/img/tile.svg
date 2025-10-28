@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <bx:grid x="0" y="0" width="50" height="50" divisions="8"/>
+    <bx:export>
+      <bx:file format="svg" path="Wrench.svg"/>
+    </bx:export>
+    <linearGradient id="color-0" gradientUnits="userSpaceOnUse" bx:pinned="true">
+      <stop style="stop-color: rgba(0, 14, 54, 0.59)"/>
+    </linearGradient>
+    <linearGradient id="color-1" gradientUnits="userSpaceOnUse" bx:pinned="true">
+      <stop style="stop-color: rgb(49, 49, 49)"/>
+    </linearGradient>
+  </defs>
+  <rect width="50" height="50" style="fill: url(&quot;#color-1&quot;);"/>
+  <rect width="49" height="49" style="paint-order: fill; stroke: url(&quot;#color-0&quot;); fill: none;" y="0.5" x="0.5"/>
+  <path style="fill: rgb(216, 216, 216); stroke: url(&quot;#color-0&quot;);" d="M 0 12.5 L 50 12.5"/>
+  <path style="fill: rgb(216, 216, 216); stroke: url(&quot;#color-0&quot;);" d="M 50 25 L 0 25"/>
+  <path style="fill: rgb(216, 216, 216); stroke: url(&quot;#color-0&quot;);" d="M 0 37.5 L 50 37.5"/>
+  <path style="fill: rgb(216, 216, 216); stroke: url(&quot;#color-0&quot;);" d="M 12.5 0 L 12.5 50"/>
+  <path style="fill: rgb(216, 216, 216); stroke: url(&quot;#color-0&quot;);" d="M 25 50 L 25 0 Z"/>
+  <path style="fill: rgb(216, 216, 216); stroke: url(&quot;#color-0&quot;);" d="M 37.5 0 L 37.5 50 Z"/>
+</svg>

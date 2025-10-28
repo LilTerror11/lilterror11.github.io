@@ -1,0 +1,75 @@
+@import url('defs.css');
+
+#background {
+    position: relative;
+    height: 100vh; width: 100vw;
+    overflow: hidden;
+}
+
+#container {
+    position: absolute;
+    left: 0; right: 0; top: 0; bottom: 0;
+    overflow: hidden;
+}
+
+#background::before {
+    content: "";    
+    position: absolute;
+    top: -25vh;
+    left: -25vw;
+    width: 150vw;
+    height: 150vh;
+    background-image: url('../assets/img/tile.svg');
+    background-repeat: repeat;
+    background-size: 64px;
+    animation: animateBackground 12s linear infinite;
+    z-index: -2;
+    rotate: 10deg;
+}
+
+/*#background::after {
+    content: "";
+    position: absolute;
+    top: -25%;
+    left: -25%;
+    width: 150%;
+    height: 150%;
+    background-image: url('../assets/img/tile.svg');
+    background-repeat: no-repeat;
+    background-size: 10vw;
+    animation: animateLargeBackground 12s linear infinite;
+    z-index: -2;
+    rotate: 10deg;
+}*/
+
+@keyframes animateBackground {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 192px 128px;
+    }
+}
+/*
+@keyframes animateLargeBackground {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 40vw 30vw;
+    }
+}*/
+
+p {
+    color: white;
+}
+
+#content {
+    background-color: var(--gray-2);
+    background-color: transparent white;
+    position: absolute;
+    left: 10vw;
+    right: 10vw;
+    top: 0;
+    bottom: 0;
+}
