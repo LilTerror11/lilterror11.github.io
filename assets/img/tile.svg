@@ -14,10 +14,5 @@
   </defs>
   <rect width="50" height="50" style="fill: url(&quot;#color-1&quot;);"/>
   <rect width="49" height="49" style="paint-order: fill; stroke: url(&quot;#color-0&quot;); fill: none;" y="0.5" x="0.5"/>
-  <path style="fill: rgb(216, 216, 216); stroke: url(&quot;#color-0&quot;);" d="M 0 12.5 L 50 12.5"/>
-  <path style="fill: rgb(216, 216, 216); stroke: url(&quot;#color-0&quot;);" d="M 50 25 L 0 25"/>
-  <path style="fill: rgb(216, 216, 216); stroke: url(&quot;#color-0&quot;);" d="M 0 37.5 L 50 37.5"/>
-  <path style="fill: rgb(216, 216, 216); stroke: url(&quot;#color-0&quot;);" d="M 12.5 0 L 12.5 50"/>
-  <path style="fill: rgb(216, 216, 216); stroke: url(&quot;#color-0&quot;);" d="M 25 50 L 25 0 Z"/>
-  <path style="fill: rgb(216, 216, 216); stroke: url(&quot;#color-0&quot;);" d="M 37.5 0 L 37.5 50 Z"/>
+  <path style="fill: rgb(216, 216, 216); stroke: url(&quot;#color-0&quot;);" d="M 0 12.5 L 50 12.5 M 50 25 L 0 25 M 0 37.5 L 50 37.5 M 12.5 0 L 12.5 50 M 25 50 L 25 0 Z M 37.5 0 L 37.5 50 Z"/>
 </svg>
