@@ -1,0 +1,43 @@
+<!--
+This will work because html is some what auto corrected by the website when loaded, it will auto move this to head, and make body and the html tags, meaning this can be dont with only these tags, the gradients can be used to add lines, and background color is the background, this is basicly replicating the svg
+-->
+<style>
+
+    body {
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+    }
+
+    @keyframes moveBackground {
+        from {background-position: 0 0;}
+        to {background-position: 192px 128px;}
+    }
+
+    body::before {
+        animation: moveBackground 12s linear infinite;
+        rotate: 10deg;
+        content: "";
+        top: -25vh;
+        left: -25vw;
+        width: 200vw;
+        height: 200vh;
+        position: absolute;
+        background-color: rgb(49, 49, 49);
+        background-size: 64px 64px;
+        background-image:
+            linear-gradient(to right, rgba(0, 14, 54, 0.59) 2px, transparent 2px),
+            linear-gradient(to bottom, rgba(0, 14, 54, 0.59) 2px, transparent 2px),
+            linear-gradient(to left, rgba(0, 14, 54, 0.59) 2px, transparent 2px),
+            linear-gradient(to top, rgba(0, 14, 54, 0.59) 2px, transparent 2px),
+            linear-gradient(to right, rgba(0, 14, 54, 0.59) 2px, transparent 2px),
+            linear-gradient(to right, transparent 15px, rgba(0, 14, 54, 0.59) 15px, rgba(0, 14, 54, 0.59) 17px, transparent 17px),
+            linear-gradient(to right, transparent 31px, rgba(0, 14, 54, 0.59) 31px, rgba(0, 14, 54, 0.59) 33px, transparent 33px),
+            linear-gradient(to left, transparent 15px, rgba(0, 14, 54, 0.59) 15px, rgba(0, 14, 54, 0.59) 17px, transparent 17px),
+            linear-gradient(to bottom, transparent 15px, rgba(0, 14, 54, 0.59) 15px, rgba(0, 14, 54, 0.59) 17px, transparent 17px),
+            linear-gradient(to bottom, transparent 31px, rgba(0, 14, 54, 0.59) 31px, rgba(0, 14, 54, 0.59) 33px, transparent 33px),
+            linear-gradient(to top, transparent 15px, rgba(0, 14, 54, 0.59) 15px, rgba(0, 14, 54, 0.59) 17px, transparent 17px);
+        background-repeat: repeat;
+    }
+</style>
